@@ -1,12 +1,87 @@
-# React + Vite
+# MenuMetrics Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend React application for the [MenuMetrics](https://github.com/PepaPanda/menumetrics) project — a lightweight tool for managing restaurants and their menu items with nutritional info.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Create, edit, and delete restaurants and menu items
+- Track macros like carbohydrates, fats, sugars, proteins, salts, and fiber
+- URL-driven filtering with search input
+- Clean and minimal layout using custom UI components
+- Full integration with the [MenuMetrics Backend](https://github.com/PepaPanda/menumetrics)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Requirements
+
+This frontend depends on the backend API being available locally.
+
+You **must set up and run the backend first**:
+
+```bash
+git clone https://github.com/PepaPanda/menumetrics
+cd menumetrics
+npm install
+npm run dev
+```
+
+> The backend runs on `http://localhost:3000` by default.
+
+---
+
+## 📦 Getting Started with the Frontend
+
+```bash
+git clone https://github.com/PepaPanda/menumetrics-frontend
+cd menumetrics-frontend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+The app will start using [Vite](https://vitejs.dev/) on `http://localhost:5173` by default.
+
+---
+
+## 🔧 Configuration
+
+The API base URL is configured using Vite environment variables.
+
+Check your `.env` file:
+
+```
+VITE_API_BASE=http://localhost:3000
+```
+
+Make sure it matches your backend setup.
+
+---
+
+## 💡 Development Notes
+
+- React + Vite frontend
+- React Router used for navigation and route-based logic
+- Controlled forms for menu items and restaurants
+- Uses `useParams` and `useSearchParams` for ID-based and query-based routing
+
+---
+
+## 🧪 Ideas I would like to but couldn't realize in time because I do everything late
+
+- FE Form validation and error messages
+- Better decomposition of components into standalone functions, custom hooks
+- darkmode
+- Pre-select restaurant in menuitem detail by url params (this would be a game changer)
+- Overall styling is very simple, would like to improve on that
+- Loading wheel
+- Error handling/popups and infoboxes - at the moment, there is pretty much nothing
+- For simplicity, I'm reloading after posting. This is unnecessary.
+
+---
+
+## 🧑‍💻 Author
+
+Built by [@PepaPanda](https://github.com/PepaPanda)
+See more of my works at https://www.code-by-martin.com/
