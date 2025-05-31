@@ -27,7 +27,12 @@ npm install
 npm run dev
 ```
 
+And set up your .env file. 
+
 > The backend runs on `http://localhost:3000` by default.
+
+
+Full guide: https://github.com/PepaPanda/menumetrics
 
 ---
 
