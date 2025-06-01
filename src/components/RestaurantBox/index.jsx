@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from '../Button'
 import VerticalGap from '../VerticalGap'
 
-const Restaurant = ({ id, name, address, items = [] }) => {
+const RestaurantBox = ({ id, name, address, items = [] }) => {
   return (
     <div>
       <Link to={`restaurant/${id}`}>
@@ -28,7 +28,7 @@ const Restaurant = ({ id, name, address, items = [] }) => {
         )}
         <VerticalGap height="10px" />
 
-        <Button navigateTo="/menuitem" style={{ aspectRatio: '1/1' }}>
+        <Button navigateTo={`/menuitem/?restaurantid=${id}`} style={{ aspectRatio: '1/1' }}>
           <b>+</b>
         </Button>
       </MenuItemWrapperEl>
@@ -36,4 +36,4 @@ const Restaurant = ({ id, name, address, items = [] }) => {
   )
 }
 
-export default Restaurant
+export default RestaurantBox

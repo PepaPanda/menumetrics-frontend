@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const OuterWrapperEl = styled.div`
+const OuterWrapperEl = styled(Link)`
   width: 400px;
   border: 2px solid rgb(177, 177, 177);
   border-radius: 7px;
