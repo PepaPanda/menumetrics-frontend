@@ -83,6 +83,7 @@ Make sure it matches your backend setup.
 - Loading wheel
 - Error handling/popups and infoboxes - at the moment, there is pretty much nothing
 - For simplicity, I'm reloading after posting. This is unnecessary.
+- Load data on first load. Then save in context / localstorage
 
 ---
 
