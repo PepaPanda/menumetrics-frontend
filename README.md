@@ -27,10 +27,9 @@ npm install
 npm run dev
 ```
 
-And set up your .env file. 
+And set up your .env file.
 
 > The backend runs on `http://localhost:3000` by default.
-
 
 Full guide: https://github.com/PepaPanda/menumetrics
 
@@ -73,17 +72,12 @@ Make sure it matches your backend setup.
 
 ---
 
-## 🧪 Ideas I would like to but couldn't realize in time because I do everything late
+## 🧪 Ideas I would like to but couldn't realize in time
 
-- FE Form validation and error messages
-- Better decomposition of components into standalone functions, custom hooks
+- Better FE Form validation and error messages
 - darkmode
-- Pre-select restaurant in menuitem detail by url params (this would be a game changer)
 - Overall styling is very simple, would like to improve on that
 - Loading wheel
-- Error handling/popups and infoboxes - at the moment, there is pretty much nothing
-- For simplicity, I'm reloading after posting. This is unnecessary.
-- Load data on first load. Then save in context / localstorage
 
 ---
 
